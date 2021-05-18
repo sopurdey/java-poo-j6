@@ -35,7 +35,7 @@ public class RecherchePopulationBorneService extends MenuService {
 		
 		System.out.println("Choississez une population maximum (en milliers d'habitants): ");
 		String saisieMax = scanner.nextLine();
-		if (!NumberUtils.isDigits(saisieMin)) {
+		if (!NumberUtils.isDigits(saisieMax)) {
 			throw new NotNumberException("La population minimum doit être un nombre entier");
 		}
 
